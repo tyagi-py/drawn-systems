@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SocialLinks } from "@/components/SocialLinks";
 
 export const metadata: Metadata = {
   title: "About",
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main className="mx-auto max-w-2xl px-6 py-24">
+      <SocialLinks />
       <h1 className="text-2xl font-medium">About</h1>
       <div className="mt-6 space-y-4 text-muted">
         <p>
