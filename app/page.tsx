@@ -9,13 +9,13 @@ export default function HomePage() {
     <main>
       <section className="mx-auto max-w-3xl px-6 py-24 text-center sm:py-32">
         <h1 className="text-sm font-semibold tracking-[0.3em] text-muted uppercase">
-          Sumit
+          Sumit Tyagi
         </h1>
         <p className="mt-4 text-2xl font-medium sm:text-3xl">
           AI · Systems · Engineering
         </p>
         <p className="mx-auto mt-6 max-w-xl text-balance text-muted">
-          A collection of things I explore, understand, and visualize.
+          I’m Sumit, an engineer who likes understanding complex systems by breaking them down visually. This is where I publish my explorations, notes, and ideas as interactive boards.
         </p>
         <Link
           href="/boards"

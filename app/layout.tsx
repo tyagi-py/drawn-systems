@@ -1,21 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import { Navigation } from "@/components/Navigation";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const excalifont = localFont({
+  src: "./fonts/Excalifont-Regular.woff2",
+  variable: "--font-excalifont",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: {
-    default: "Sumit — AI, Systems, Engineering",
+    default: "Boards by Sumit Tyagi — AI, Systems, Engineering",
     template: "%s — Sumit",
   },
   description:
@@ -43,7 +39,7 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-background font-sans text-foreground antialiased`}
+        className={`${excalifont.variable} min-h-screen bg-background font-sans text-foreground antialiased`}
       >
         <Navigation />
         {children}

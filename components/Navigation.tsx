@@ -12,7 +12,7 @@ export function Navigation() {
           href="/"
           className="text-sm font-semibold tracking-[0.2em] uppercase"
         >
-          Sumit
+          Drawn Systems
         </Link>
         <div className="flex items-center gap-6">
           <Link
