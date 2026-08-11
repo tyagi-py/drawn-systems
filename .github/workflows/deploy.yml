@@ -43,7 +43,10 @@ jobs:
         id: base-path
         run: |
           REPO_NAME="${GITHUB_REPOSITORY#*/}"
-          if [[ "$REPO_NAME" == *.github.io ]]; then
+          if [[ -f "public/CNAME" ]]; then
+            # A custom domain serves from its own root, regardless of repo name.
+            echo "base_path=" >> "$GITHUB_OUTPUT"
+          elif [[ "$REPO_NAME" == *.github.io ]]; then
             echo "base_path=" >> "$GITHUB_OUTPUT"
           else
             echo "base_path=/$REPO_NAME" >> "$GITHUB_OUTPUT"
