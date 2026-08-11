@@ -60,7 +60,7 @@ export default async function BoardPage({ params }: BoardPageProps) {
   }
 
   return (
-    <div className="flex h-[calc(100vh-4rem)] flex-col">
+    <div className="flex h-[calc(100vh-5rem)] flex-col">
       <div className="flex h-12 shrink-0 items-center justify-between border-b border-border px-6">
         <Link
           href="/boards"
