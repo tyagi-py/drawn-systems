@@ -1,0 +1,7 @@
+{
+  "title": "Distributed Machine Learning",
+  "description": "Distributed ML covering multi-GPU training, data and model parallelism, gradient synchronization, scaling, and the systems that make large-scale ML possible.",
+  "slug": "distributed-ml",
+  "category": "ML",
+  "published": true
+}
