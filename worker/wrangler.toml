@@ -1,0 +1,11 @@
+name = "newsletter-subscribe"
+main = "src/index.ts"
+compatibility_date = "2026-08-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "newsletter"
+database_id = "7c788c7d-210b-4851-b2ee-f97788bf63d5"
+
+[vars]
+ALLOWED_ORIGIN = "https://drawnsystems.com"

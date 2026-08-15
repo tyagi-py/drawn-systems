@@ -27,6 +27,12 @@ export function Navigation() {
           >
             About
           </Link>
+          <Link
+            href="/subscribe"
+            className="rounded-md bg-accent px-3.5 py-1.5 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90"
+          >
+            Subscribe
+          </Link>
           <ThemeToggle />
         </div>
       </nav>
