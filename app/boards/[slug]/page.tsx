@@ -75,15 +75,15 @@ export default async function BoardPage({ params }: BoardPageProps) {
         <ExcalidrawViewer scene={scene} />
       </div>
 
-      <div className="shrink-0 border-t border-border px-6 py-4">
-        <h1 className="text-base font-medium">{board.metadata.title}</h1>
+      <div className="flex h-9 shrink-0 items-center gap-3 border-t border-border px-6">
+        <h1 className="shrink-0 text-sm font-medium">{board.metadata.title}</h1>
         {board.metadata.description ? (
-          <p className="mt-1 text-sm text-muted">
+          <p className="truncate text-xs text-muted">
             {board.metadata.description}
           </p>
         ) : null}
         {board.metadata.category ? (
-          <p className="mt-2 text-xs tracking-wide text-muted uppercase">
+          <p className="ml-auto shrink-0 text-xs tracking-wide text-muted uppercase">
             {board.metadata.category}
           </p>
         ) : null}
