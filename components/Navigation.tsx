@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Logo } from "@/components/Logo";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 export function Navigation() {
@@ -8,11 +9,14 @@ export function Navigation() {
         aria-label="Primary"
         className="mx-auto flex h-full max-w-5xl items-center justify-between px-6"
       >
-        <Link href="/" className="leading-tight">
-          <span className="block text-sm font-semibold tracking-[0.2em] uppercase">
-            Drawn Systems
+        <Link href="/" className="flex items-center gap-2.5 leading-tight">
+          <Logo className="h-7 w-7 shrink-0" />
+          <span className="leading-tight">
+            <span className="block text-sm font-semibold tracking-[0.2em] uppercase">
+              Drawn Systems
+            </span>
+            <span className="block text-xs text-muted">by Sumit Tyagi</span>
           </span>
-          <span className="block text-xs text-muted">by Sumit Tyagi</span>
         </Link>
         <div className="flex items-center gap-6">
           <Link
