@@ -27,3 +27,10 @@ next-env.d.ts
 
 # local tooling
 .claude/settings.local.json
+.env.local.example
+.env.local.example
+
+.agents
+.claude
+skills-lock.json
+.codex/config.toml
